@@ -31,6 +31,10 @@ li{
     margin: 0 10px;
 }
 
+li:hover{
+    border-bottom: 1px solid #fff;
+}
+
 li img{
     width: 20px;
 }
@@ -58,14 +62,20 @@ main >*{
 
 .div1{
     background-color: #E74BC5;
-    border-radius: 10px;
+    border-radius: 3px;
     height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.div1 h2{
+    margin: 0 auto;
 }
 
 .div2{
     max-height: 400px;
     background-color: #9B1B9B;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 .div2 form{

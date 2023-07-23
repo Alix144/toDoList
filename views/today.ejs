@@ -1,0 +1,29 @@
+<!-- header -->
+<%- include("partials/header.ejs") %>
+
+<!-- work body -->
+<h1>What are you up to?</h1>
+<div class="div1">
+    <h2><%= locals.dateToday %></h2>
+</div>
+
+<div class="div2">
+    <form action="/" method="post">
+        <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+        <button type="submit">+</button>
+    </form>
+    <div class="items">
+
+
+        <div class="item"><input type="checkbox"><p>eat</p></div>
+        <div class="item"><input type="checkbox"><p>something</p></div>
+        <div class="item"><input type="checkbox"><p>something</p></div>
+        <div class="item"><input type="checkbox"><p>something</p></div>
+        <div class="item"><input type="checkbox"><p>something</p></div>
+        <div class="item"><input type="checkbox"><p>something</p></div>
+
+    </div>
+</div>
+
+<!-- footer -->
+<%- include("partials/footer.ejs") %>
