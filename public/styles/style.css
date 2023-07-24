@@ -120,6 +120,7 @@ button:hover{
     align-items: center;
     height: 40px;
     border-top: 1px solid rgb(226, 114, 221);
+    overflow: hidden;
 }
 
 .item:hover{
@@ -159,5 +160,5 @@ footer{
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
+    background: #7B177B; 
   }

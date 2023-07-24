@@ -8,17 +8,16 @@
 </div>
 
 <div class="div2">
-    <form action="">
-        <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+    <form action="/work" method="post">
+        <input type="text" name="newItemWork" placeholder="New Item" autocomplete="off">
         <button>+</button>
     </form>
     <div class="items">
-        <div class="item"><input type="checkbox"><p>eat</p></div>
-        <div class="item"><input type="checkbox"><p>something</p></div>
-        <div class="item"><input type="checkbox"><p>something</p></div>
-        <div class="item"><input type="checkbox"><p>something</p></div>
-        <div class="item"><input type="checkbox"><p>something</p></div>
-        <div class="item"><input type="checkbox"><p>something</p></div>
+
+        <% if(locals.newListItemWork){ locals.ArrayItemWork.push(newListItemWork)} else{} %>
+        <% locals.ArrayItemWork.forEach(item => {  %>
+        <%- `<div class="item"><input type="checkbox" name="checkbox"><p>${item}</p></div>` %>
+        <% }) %>
 
 
     </div>

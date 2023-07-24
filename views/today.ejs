@@ -14,13 +14,11 @@
     </form>
     <div class="items">
 
-
-        <div class="item"><input type="checkbox"><p>eat</p></div>
-        <div class="item"><input type="checkbox"><p>something</p></div>
-        <div class="item"><input type="checkbox"><p>something</p></div>
-        <div class="item"><input type="checkbox"><p>something</p></div>
-        <div class="item"><input type="checkbox"><p>something</p></div>
-        <div class="item"><input type="checkbox"><p>something</p></div>
+        
+        <% if(locals.newListItem){ locals.ArrayItem.push(newListItem)} else{} %>
+        <% locals.ArrayItem.forEach(item => {  %>
+        <%- `<div class="item"><input type="checkbox" name="checkbox"><p>${item}</p></div>` %>
+        <% }) %>
 
     </div>
 </div>
